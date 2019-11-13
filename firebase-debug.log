@@ -1,0 +1,52 @@
+[debug] [2019-08-14T09:00:38.049Z] ----------------------------------------------------------------------
+[debug] [2019-08-14T09:00:38.052Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2019-08-14T09:00:38.052Z] CLI Version:   7.2.2
+[debug] [2019-08-14T09:00:38.052Z] Platform:      win32
+[debug] [2019-08-14T09:00:38.052Z] Node Version:  v12.7.0
+[debug] [2019-08-14T09:00:38.054Z] Time:          Wed Aug 14 2019 14:30:38 GMT+0530 (India Standard Time)
+[debug] [2019-08-14T09:00:38.054Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=249034089&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2019-08-14T09:01:08.424Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2019-08-14T09:01:09.437Z] Token Fetch Error: FirebaseError: Server Error. connect ECONNREFUSED 216.58.200.141:443
+    at Request._callback (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:30:31)
+    at self.callback (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:203:13)
+    at Request.EventEmitter.emit (domain.js:471:20)
+    at Request.onRequestError (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:881:8)
+    at ClientRequest.emit (events.js:203:13)
+    at ClientRequest.EventEmitter.emit (domain.js:471:20)
+    at TLSSocket.socketErrorListener (_http_client.js:399:9)
+    at TLSSocket.emit (events.js:203:13)
+    at TLSSocket.EventEmitter.emit (domain.js:471:20)
+[debug] [2019-08-14T09:04:18.496Z] ----------------------------------------------------------------------
+[debug] [2019-08-14T09:04:18.499Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2019-08-14T09:04:18.499Z] CLI Version:   7.2.2
+[debug] [2019-08-14T09:04:18.499Z] Platform:      win32
+[debug] [2019-08-14T09:04:18.499Z] Node Version:  v12.7.0
+[debug] [2019-08-14T09:04:18.501Z] Time:          Wed Aug 14 2019 14:34:18 GMT+0530 (India Standard Time)
+[debug] [2019-08-14T09:04:18.502Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=827619999&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2019-08-14T09:04:26.671Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2019-08-14T09:04:27.684Z] Token Fetch Error: FirebaseError: Server Error. connect ECONNREFUSED 216.58.200.141:443
+    at Request._callback (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:30:31)
+    at self.callback (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:203:13)
+    at Request.EventEmitter.emit (domain.js:471:20)
+    at Request.onRequestError (C:\Users\ajay.anthony\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:881:8)
+    at ClientRequest.emit (events.js:203:13)
+    at ClientRequest.EventEmitter.emit (domain.js:471:20)
+    at TLSSocket.socketErrorListener (_http_client.js:399:9)
+    at TLSSocket.emit (events.js:203:13)
+    at TLSSocket.EventEmitter.emit (domain.js:471:20)

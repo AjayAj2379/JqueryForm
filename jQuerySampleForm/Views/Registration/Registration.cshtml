@@ -1,0 +1,307 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <meta charset="utf-8" />
+    <!--<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--jQuery Validator Plugin-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js">
+    </script>
+    <style>
+        .color{
+            background-color:aquamarine
+        }
+
+    </style>
+</head>
+<body>
+    <br>
+    <form id="myform">
+        <div class="container">
+            <div><center><strong>REGISTRATION FORM</strong></center></div>
+            <br>
+
+            <div class="jumbotron">
+                <!-- color changer Button-->
+                <div>
+                <div class="col-md-10 offset-md-10 form-group">
+                    <button type="button" class="btn btn-primary" id="changecolor">Change Color</button>
+                </div>
+             
+                </div>
+                <div class="form-group" id="salutation"><center><strong>Hi User</strong></center></div>
+
+                <!-- FirstName-->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="fName"><strong>First Name <span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="fName" class="form-control" name="fName">
+                        <div class="text-danger" id="efName"></div>
+                    </div>
+
+                </div>
+
+                <!-- LastName-->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="lName"><strong>Last Name <span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="lName" class="form-control" name="lName">
+                        <div class="text-danger" id="elName"></div>
+                    </div>
+
+                </div>
+
+                <!-- Age-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="age"><strong>Age<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-2">
+                        <select name="age" class="custom-select" id="age">
+                            <option id="agefactor" selected disabled>None</option>
+
+                        </select>
+                    </div>
+                    
+
+                </div>
+
+                <!-- Gender-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="gender"><strong>Gender<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-4">
+                        <select name="gender" class="custom-select" id="gender">
+                            <option selected disabled>None</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+
+                        </select>
+                       
+                    </div>
+                  
+                </div>
+
+                <!--Date-->
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="date"><strong>Date <span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="date" id="date" class="form-control" name="date">
+                        
+                    </div>
+
+                </div>
+                <!-- Address1-->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="address1"><strong>Address 1 <span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="address1" class="form-control" name="address1">
+                       
+                    </div>
+
+                </div>
+
+                <!-- Address2-->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="address2"><strong>Address 2</strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="address2" class="form-control">
+                    </div>
+
+                </div>
+
+                <!-- Country-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="country"><strong>Country<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-4">
+                        
+                       
+                        
+                        <select name="country" class="custom-select" id="countrylist" >
+                            <option id="country"  selected disabled >None</option>
+                            @*<option value="10">India</option>
+                            <option value="11">America</option>
+                            <option value="12">China</option>
+                            <option value="13">Australia</option>*@
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- State-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="state"><strong>State<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-4" >
+                        <select  name="state" class="custom-select" id="statelist">
+                            <option id="state" selected disabled>None</option>
+                            @*<option selected>None</option>
+                            <option value="10">India</option>
+                            <option value="11">America</option>
+                            <option value="12">China</option>
+                            <option value="13">Australia</option>*@
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- City-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="city"><strong>City<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-4" >
+                        <select name="city" class="custom-select" id="citylist">
+                          
+                            <option id="city" selected disabled>None</option>
+                            @*<option selected>None</option>
+                            <option value="10">India</option>
+                            <option value="11">America</option>
+                            <option value="12">China</option>
+                            <option value="13">Australia</option>*@
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- Mobile Number -->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="mobile"><strong>Mobile Number <span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="mobile" class="form-control" name="mobile">
+                        <div class="text-danger" id="emobile"></div>
+                    </div>
+
+                </div>
+
+                <!-- Relocation-->
+
+                <div class="row  form-group">
+
+                    <div class="col-md-2 offset-md-2">
+
+                        <label for="relocation"><strong>Relocation<span class="text-danger">*</span></strong></label>
+                    </div>
+                    <div class="col-md-4" id="relocation">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="relocationRadio" id="inlineRadio1" value="Yes" checked>
+                            <label class="form-check-label" for="inlineCheckbox1"><strong>Yes</strong></label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="relocationRadio" id="inlineRadio2" value="No">
+                            <label class="form-check-label" for="inlineCheckbox2"><strong>No</strong></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Comments-->
+
+                <div class="row justify-content-center form-group">
+
+                    <div class="col-md-2">
+
+                        <label for="comments"><strong>Comments</strong></label>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea rows="6" cols="70" name="comments" class="form-control" id="comments"></textarea>
+
+                    </div>
+
+                    
+   <!--checkbox-->
+
+                </div>
+                <div class="row form-group">
+                <div class="col-md-8 offset-md-2">
+                <input type="checkbox" name="checkbox" id="checkbox" value="yes"><strong><i> I Accept and agree to the terms and condition</i></strong>
+                    <div id="check"></div>
+                  </div>
+                    
+                    </div>
+              
+
+                <!-- Buttons-->
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <button type="button" class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="reset" class="btn btn-primary" id="clear">Clear</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+</form>
+
+
+        <script src="../scripts/jQuery.js"></script>
+
+    <script src="~/scripts/Validation.js"></script>
+
+
+</body>
+
+</html>

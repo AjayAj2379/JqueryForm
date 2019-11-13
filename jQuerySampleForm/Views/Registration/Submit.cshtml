@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Submit</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="jumbotron">
+            <h1>Form Submitted</h1>
+            @*@{
+                if (ViewBag["Gender"] == "Male")
+                {
+                    <h1>Form Submitted for Mr.@ViewBag["FirstName"] @ViewBag["LastName"]</h1>
+
+                }
+                else
+                {
+                    <h1>Form Submitted for Mr.@ViewBag["FirstName"] @ViewBag["LastName"]</h1>
+
+                }
+            }*@
+        </div> 
+    </div>
+</body>
+</html>
